@@ -134,6 +134,22 @@ fun HomeScreen(homeViewModel: GifteaseViewHome = viewModel()) {
                             Spacer(modifier = Modifier.height(10.dp))
 
                             //2
+
+
+                            Text(
+                                text = " Teddys ",
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .heightIn(),
+                                style = TextStyle(
+                                    fontSize = 20.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    fontStyle = FontStyle.Normal
+                                ), color = colorResource(id = R.color.black),
+                                textAlign = TextAlign.Center)
+
+                            Spacer(modifier = Modifier.height(8.dp))
+
                         }
 
                         Spacer(modifier = Modifier.height(10.dp))
