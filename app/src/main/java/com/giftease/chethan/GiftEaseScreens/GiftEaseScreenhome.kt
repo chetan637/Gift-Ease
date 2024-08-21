@@ -168,7 +168,7 @@ fun HomeScreen(homeViewModel: GifteaseViewHome = viewModel()) {
                             picImage1()
                             Spacer(modifier = Modifier.height(10.dp))
 
-                         
+
                             Text(
                                 text = " Cups ",
                                 modifier = Modifier
@@ -204,7 +204,22 @@ fun HomeScreen(homeViewModel: GifteaseViewHome = viewModel()) {
                             picImage2()
                             Spacer(modifier = Modifier.height(10.dp))
 
-                           //4
+                            Text(
+                                text = " Frames ",
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .heightIn(),
+                                style = TextStyle(
+                                    fontSize = 20.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    fontStyle = FontStyle.Normal
+                                ), color = colorResource(id = R.color.black),
+                                textAlign = TextAlign.Center)
+
+                            Spacer(modifier = Modifier.height(8.dp))
+
+
+
 
                         }
 
