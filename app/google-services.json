@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "698558689774",
+    "project_id": "giftease-f5fbd",
+    "storage_bucket": "giftease-f5fbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698558689774:android:80bd18857c184fa87d5eff",
+        "android_client_info": {
+          "package_name": "com.giftease.chethan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8LZQAndQ1MTP0QnOy_OiAt9Qascdh18Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
