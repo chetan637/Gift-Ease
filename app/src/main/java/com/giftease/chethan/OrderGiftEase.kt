@@ -36,6 +36,73 @@ import com.giftease.chethan.ui.theme.Primary
 
 
 class OrderGiftEase : ComponentActivity() {
+    @SuppressLint("SuspiciousIndentation")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+
+            val context = LocalContext.current
+            val gradient45 = Brush.linearGradient(
+                colors = listOf(Color.White, Color.Yellow),
+                start = Offset(0f, Float.POSITIVE_INFINITY),
+                end = Offset(Float.POSITIVE_INFINITY, 0f)
+            )
+
+            Surface(
+                modifier = Modifier
+                    .background(gradient45)
+                    .fillMaxSize()
+                    .padding(28.dp)
+            ) {
+
+                Column(modifier = Modifier
+                    .fillMaxSize()
+                    .background(gradient45),
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally) {
+                    HeadingTextComponent(value = "Booked Successfully")
+                    Spacer(modifier = Modifier.height(25.dp))
+                    Spacer(modifier = Modifier.height(105.dp))
+                    val y = ""
+                    Button(
+                        modifier = Modifier
+                            .wrapContentWidth()
+                            .heightIn(48.dp),
+                        onClick = {
+                            context.startActivity(Intent(context, GiftEaseMain::class.java)
+                                .putExtra("_data", y))
+                        },
+                        contentPadding = PaddingValues(),
+                        colors = ButtonDefaults.buttonColors(Color.Transparent),
+                        shape = RoundedCornerShape(50.dp),
+                    ) {
+                        Box(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .heightIn(48.dp)
+                                .background(
+                                    brush = Brush.horizontalGradient(listOf(Primary, Primary)),
+                                    shape = RoundedCornerShape(20.dp)
+                                ),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Text(
+                                text = "Back to Home",
+                                fontSize = 18.sp,
+                                color = Color.White,
+                                fontWeight = FontWeight.Bold
+                            )
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+
+
 
 }
 
