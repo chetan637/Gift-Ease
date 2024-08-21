@@ -50,5 +50,5 @@ import kotlin.math.min
 
 class ProfileActivity : ComponentActivity() {
 
-    
+
 }

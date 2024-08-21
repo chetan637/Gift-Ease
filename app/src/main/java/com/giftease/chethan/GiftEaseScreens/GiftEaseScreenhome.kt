@@ -114,6 +114,25 @@ fun HomeScreen(homeViewModel: GifteaseViewHome = viewModel()) {
                             verticalArrangement = Arrangement.Center) {
 
                            //1
+                            Text(
+                                text = " Profile Information ",
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clickable {
+                                        localContext.startActivity(Intent(localContext,ProfileActivity::class.java))
+                                    }
+                                    .heightIn(),
+                                style = TextStyle(
+                                    fontSize = 20.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    fontStyle = FontStyle.Normal
+                                ), color = colorResource(id = R.color.black),
+                                textAlign = TextAlign.Center)
+
+
+                            picImage()
+                            Spacer(modifier = Modifier.height(10.dp))
+
                             //2
                         }
 
